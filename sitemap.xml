@@ -25,6 +25,12 @@
     <loc>https://r4ds.github.io/pkgflash/index.html</loc>
   </url>
   <url>
+    <loc>https://r4ds.github.io/pkgflash/reference/dot-pkg_fns.html</loc>
+  </url>
+  <url>
     <loc>https://r4ds.github.io/pkgflash/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://r4ds.github.io/pkgflash/reference/pkg_fn_info.html</loc>
   </url>
 </urlset>
