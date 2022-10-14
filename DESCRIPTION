@@ -1,10 +1,15 @@
 Package: pkgflash
-Title: What the Package Does (One Line, Title Case)
+Title: Flashcards for Code Syntax
 Version: 0.0.0.9000
 Authors@R: 
     person("Jon", "Harmon", , "jonthegeek@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-4781-4346"))
-Description: What the package does (one paragraph).
+Description: While modern IDEs make it easy to look up arguments to functions, 
+    if you actually know function syntax, you can read and understand code more
+    quickly (see 
+    https://livebook.manning.com/book/the-programmers-brain/chapter-3/). This 
+    package generates flashcards to make it easier to learn the syntax of a 
+    package's exported functions.
 License: MIT + file LICENSE
 Suggests: 
     covr,
