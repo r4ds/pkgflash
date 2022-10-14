@@ -26,33 +26,18 @@ The goal of pkgflash is to ...
 
 ## Installation
 
-You can install the development version of pkgflash like so:
+You can install the development version of pkgflash from [GitHub](https://github.com/) with:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install.packages("devtools")
+devtools::install_github("r4ds/pkgflash")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Actually fill this in!
 
-```{r example}
-library(pkgflash)
-## basic example code
-```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+## Code of Conduct
 
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
+Please note that the cookies project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
