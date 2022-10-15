@@ -59,7 +59,7 @@ rlang_fns$ns_env
 #> caller_env()
 ```
 
-The sole argument to `rlang::ns_env()` is `x`, and it’s default value is
+The sole argument to `rlang::ns_env()` is `x`, and its default value is
 `caller_env()`. That’s another function in {rlang}.
 
 ``` r
