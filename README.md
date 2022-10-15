@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# pkgflash
+# pkgflash <a href="https://r4ds.github.io/pkgflash/"><img src="man/figures/logo.svg" align="right" height="278" /></a>
 
 <!-- badges: start -->
 
