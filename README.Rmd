@@ -36,8 +36,39 @@ devtools::install_github("r4ds/pkgflash")
 
 ## Example
 
-There's no actual code yet, but I will add something here very soon.
-If you see this, and the package actually exports a function, please file an issue!
+I need to look into existing options for flashcards before I continue.
+That might result in a change to what this first function returns, but the general idea is ready.
+
+Let's say I'm trying to really wrap my head around the {rlang} package.
+One thing that can help me read {rlang}-using code is to learn the functions and their arguments.
+
+```{r function_data}
+library(pkgflash)
+rlang_fns <- pkg_fn_info("rlang")
+```
+
+I can see that there are `r length(rlang_fns)` functions exported from {rlang} (at the time that this README was built).
+
+I use the `rlang::ns_env()` function in this package.
+Let's look at its argument(s) (and their default values, if any) to begin to internalize how this function works.
+
+```{r ns_env}
+rlang_fns$ns_env
+```
+
+The sole argument to `rlang::ns_env()` is `x`, and it's default value is `caller_env()`.
+That's another function in {rlang}.
+
+```{r caller_env}
+rlang_fns$caller_env
+```
+
+`rlang::caller_env()` takes an argument `n`, which tells it how many callers to go back (ie, how far up the stack to go).
+
+I envision the flashcards eventually showing a function name, and asking you to recall (and eventually maybe type in) the names of its arguments.
+Or perhaps we'll allow you to "flip" the card again, by recalling the default values of those arguments.
+
+Long-term, I would like to build in concepts such as spaced repetition and interleaving, to allow you to use this package as a learning tool.
 
 
 ## Code of Conduct

@@ -30,7 +30,7 @@ pkg_fn_info <- function(pkg) {
   purrr::map(
     pkg_fns,
     formals,
-    envir = rlang::pkg_env(pkg)
+    envir = rlang::ns_env(pkg)
   )
 }
 
