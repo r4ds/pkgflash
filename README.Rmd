@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# pkgflash
+# pkgflash <a href="https://r4ds.github.io/pkgflash/"><img src="man/figures/logo.svg" align="right" height="278" /></a>
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
