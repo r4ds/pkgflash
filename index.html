@@ -83,7 +83,25 @@
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
-<p>There’s no actual code yet, but I will add something here very soon. If you see this, and the package actually exports a function, please file an issue!</p>
+<p>I need to look into existing options for flashcards before I continue. That might result in a change to what this first function returns, but the general idea is ready.</p>
+<p>Let’s say I’m trying to really wrap my head around the {rlang} package. One thing that can help me read {rlang}-using code is to learn the functions and their arguments.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/r4ds/pkgflash" class="external-link">pkgflash</a></span><span class="op">)</span></span>
+<span><span class="va">rlang_fns</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/pkg_fn_info.html">pkg_fn_info</a></span><span class="op">(</span><span class="st">"rlang"</span><span class="op">)</span></span></code></pre></div>
+<p>I can see that there are 432 functions exported from {rlang} (at the time that this README was built).</p>
+<p>I use the <code><a href="https://rlang.r-lib.org/reference/ns_env.html" class="external-link">rlang::ns_env()</a></code> function in this package. Let’s look at its argument(s) (and their default values, if any) to begin to internalize how this function works.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">rlang_fns</span><span class="op">$</span><span class="va">ns_env</span></span>
+<span><span class="co">#&gt; $x</span></span>
+<span><span class="co">#&gt; caller_env()</span></span></code></pre></div>
+<p>The sole argument to <code><a href="https://rlang.r-lib.org/reference/ns_env.html" class="external-link">rlang::ns_env()</a></code> is <code>x</code>, and it’s default value is <code>caller_env()</code>. That’s another function in {rlang}.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">rlang_fns</span><span class="op">$</span><span class="va">caller_env</span></span>
+<span><span class="co">#&gt; $n</span></span>
+<span><span class="co">#&gt; [1] 1</span></span></code></pre></div>
+<p><code><a href="https://rlang.r-lib.org/reference/stack.html" class="external-link">rlang::caller_env()</a></code> takes an argument <code>n</code>, which tells it how many callers to go back (ie, how far up the stack to go).</p>
+<p>I envision the flashcards eventually showing a function name, and asking you to recall (and eventually maybe type in) the names of its arguments. Or perhaps we’ll allow you to “flip” the card again, by recalling the default values of those arguments.</p>
+<p>Long-term, I would like to build in concepts such as spaced repetition and interleaving, to allow you to use this package as a learning tool.</p>
 </div>
 <div class="section level2">
 <h2 id="code-of-conduct">Code of Conduct<a class="anchor" aria-label="anchor" href="#code-of-conduct"></a>
