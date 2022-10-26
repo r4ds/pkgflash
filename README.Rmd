@@ -73,4 +73,4 @@ Long-term, I would like to build in concepts such as spaced repetition and inter
 
 ## Code of Conduct
 
-Please note that the cookies project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+Please note that the pkgflash project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
