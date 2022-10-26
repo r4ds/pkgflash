@@ -56,7 +56,7 @@ Let's look at its argument(s) (and their default values, if any) to begin to int
 rlang_fns$ns_env
 ```
 
-The sole argument to `rlang::ns_env()` is `x`, and it's default value is `caller_env()`.
+The sole argument to `rlang::ns_env()` is `x`, and its default value is `caller_env()`.
 That's another function in {rlang}.
 
 ```{r caller_env}
